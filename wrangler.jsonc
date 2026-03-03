@@ -2,17 +2,15 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "maxplushouse",
   "compatibility_date": "2025-09-27",
-  "observability": {
-    "enabled": true
-  },
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  // Self-reference binding must match the worker name above
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "maxplushouse"
-    }
-  ]
+  "observability": {
+    "enabled": true
+  },
+  // เพิ่มส่วนนี้เข้าไปครับ
+  "assets": {
+    "directory": ".next", 
+    "binding": "ASSETS"
+  }
 }
