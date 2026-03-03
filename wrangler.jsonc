@@ -5,12 +5,5 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "observability": {
-    "enabled": true
-  },
-  // เพิ่มส่วนนี้เข้าไปครับ
-  "assets": {
-    "directory": ".next", 
-    "binding": "ASSETS"
-  }
+  "pages_build_output_dir": ".next" // เปลี่ยนจาก "assets" เป็นบรรทัดนี้ครับ
 }
